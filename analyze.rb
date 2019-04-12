@@ -24,5 +24,3 @@ result[:analyzed] = response
 result[:raw_text]=response["responses"].first["fullTextAnnotation"]["text"]
 result[:sentences]=response["responses"].first["fullTextAnnotation"]["text"].split("\n")
 result[:sentence]=response["responses"].first["fullTextAnnotation"]["text"].split("\n").join(" ")
-
-#Classify image
