@@ -39,7 +39,7 @@ params = {
   }
 }
 response = HTTParty.post(
-  "https://language.googleapis.com/v1/documents:annotateText?key=AIzaSyAi0QezwxaouYQVMhAre2kucrSY6lus5rU",
+  "https://language.googleapis.com/v1/documents:annotateText?key={REPLACE_YOUR_API_KEY}",
   headers: { 'Content-Type' => 'application/json' },
   body: params.to_json
 )
